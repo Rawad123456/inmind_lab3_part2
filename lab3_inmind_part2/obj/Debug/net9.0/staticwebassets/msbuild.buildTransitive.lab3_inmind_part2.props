@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\lab3_inmind_part2.props" />
+</Project>
