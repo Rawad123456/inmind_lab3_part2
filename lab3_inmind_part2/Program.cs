@@ -2,23 +2,30 @@ using Microsoft.EntityFrameworkCore;
 
 using AutoMapper;
 using lab3_inmind_part2.Data;
+using lab3_inmind_part2.Filters;
+
 
 
 var builder = WebApplication.CreateBuilder(args);
 
-// DB connection
+
 builder.Services.AddDbContext<UniversityDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-// AutoMapper
+
 builder.Services.AddAutoMapper(typeof(Program));
 
-// Add services
-builder.Services.AddControllers();
+
+builder.Services.AddControllers(options =>
+{
+    options.Filters.Add<GlobalExceptionFilter>(); 
+});
+
 builder.Services.AddEndpointsApiExplorer();
 
 
 var app = builder.Build();
+
 
 
 app.UseHttpsRedirection();

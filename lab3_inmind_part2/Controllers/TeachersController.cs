@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 using AutoMapper;
+using lab3_inmind_part2.Exceptions;
 
 namespace lab3_inmind_part2.Controllers;
 
@@ -25,6 +26,9 @@ public class TeachersController : ControllerBase
     [HttpPost]
     public async Task<ActionResult<TeacherDto>> AddTeacher(TeacherDto dto)
     {
+        if (string.IsNullOrWhiteSpace(dto.Name))
+            throw new ValidationException("Student name is required.");
+        
         var teacher = _mapper.Map<Teacher>(dto);
         _context.Teachers.Add(teacher);
         await _context.SaveChangesAsync();
@@ -37,8 +41,9 @@ public class TeachersController : ControllerBase
     public async Task<ActionResult<TeacherDto>> GetTeacher(int id)
     {
         var teacher = await _context.Teachers.FindAsync(id);
-        if (teacher == null) return NotFound();
-
+        if (teacher == null)
+            
+            throw new NotFoundException($"Teacher with ID {id} was not found");
         return _mapper.Map<TeacherDto>(teacher);
     }
 
