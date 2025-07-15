@@ -135,3 +135,4 @@ C:\Users\User\RiderProjects\lab3_inmind_part2\lab3_inmind_part2\bin\Debug\net9.0
 C:\Users\User\RiderProjects\lab3_inmind_part2\lab3_inmind_part2\bin\Debug\net9.0\FluentValidation.AspNetCore.dll
 C:\Users\User\RiderProjects\lab3_inmind_part2\lab3_inmind_part2\bin\Debug\net9.0\FluentValidation.DependencyInjectionExtensions.dll
 C:\Users\User\RiderProjects\lab3_inmind_part2\lab3_inmind_part2\obj\Debug\net9.0\lab3_inmind_part2.sourcelink.json
+C:\Users\User\RiderProjects\lab3_inmind_part2\lab3_inmind_part2\bin\Debug\net9.0\Microsoft.IO.RecyclableMemoryStream.dll

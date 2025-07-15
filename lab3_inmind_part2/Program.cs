@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using AutoMapper;
 using lab3_inmind_part2.Data;
 using lab3_inmind_part2.Filters;
-
+using lab3_inmind_part2.Middlewares;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -29,6 +29,9 @@ var app = builder.Build();
 
 
 app.UseHttpsRedirection();
+
+app.UseMiddleware<RequestLoggingMiddleware>();
+
 app.UseAuthorization();
 app.MapControllers();
 
