@@ -27,6 +27,11 @@ builder.Services.AddControllers(options =>
 builder.Services.AddControllers()
     .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<StudentDtoValidator>());
 
+builder.Services.AddControllers(options =>
+{
+    options.Filters.Add<ValidationFilter>(); 
+});
+
 
 
 builder.Services.AddEndpointsApiExplorer();
