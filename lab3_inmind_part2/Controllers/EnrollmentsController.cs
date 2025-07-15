@@ -1,4 +1,5 @@
 using lab3_inmind_part2.Data;
+using lab3_inmind_part2.DTOs;
 using lab3_inmind_part2.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -19,24 +20,24 @@ public class EnrollmentsController : ControllerBase
 
     
     [HttpPost]
-    public async Task<IActionResult> Enroll(int studentId, int courseId)
+    public async Task<IActionResult> Enroll([FromBody] EnrollmentDto dto)
     {
-        var student = await _context.Students.FindAsync(studentId);
-        var course = await _context.Courses.FindAsync(courseId);
+        var student = await _context.Students.FindAsync(dto.StudentId);
+        var course = await _context.Courses.FindAsync(dto.CourseId);
 
         if (student == null || course == null)
             return NotFound("Student or Course not found.");
 
         var alreadyEnrolled = await _context.Enrollments
-            .AnyAsync(e => e.StudentId == studentId && e.CourseId == courseId);
+            .AnyAsync(e => e.StudentId == dto.StudentId && e.CourseId == dto.CourseId);
 
         if (alreadyEnrolled)
             return BadRequest("Student already enrolled in this course.");
 
         var enrollment = new Enrollment
         {
-            StudentId = studentId,
-            CourseId = courseId
+            StudentId = dto.StudentId,
+            CourseId = dto.CourseId
         };
 
         _context.Enrollments.Add(enrollment);
@@ -44,6 +45,7 @@ public class EnrollmentsController : ControllerBase
 
         return Ok("Student enrolled successfully.");
     }
+
 
     
     [HttpGet]

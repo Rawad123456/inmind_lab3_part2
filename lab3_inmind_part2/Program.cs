@@ -1,9 +1,11 @@
 using Microsoft.EntityFrameworkCore;
 
 using AutoMapper;
+using FluentValidation.AspNetCore;
 using lab3_inmind_part2.Data;
 using lab3_inmind_part2.Filters;
 using lab3_inmind_part2.Middlewares;
+using lab3_inmind_part2.Validators;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -19,7 +21,13 @@ builder.Services.AddAutoMapper(typeof(Program));
 builder.Services.AddControllers(options =>
 {
     options.Filters.Add<GlobalExceptionFilter>(); 
+    
 });
+
+builder.Services.AddControllers()
+    .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<StudentDtoValidator>());
+
+
 
 builder.Services.AddEndpointsApiExplorer();
 
