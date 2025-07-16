@@ -5,6 +5,7 @@ using FluentValidation.AspNetCore;
 using lab3_inmind_part2.Data;
 using lab3_inmind_part2.Filters;
 using lab3_inmind_part2.Middlewares;
+using lab3_inmind_part2.Services;
 using lab3_inmind_part2.Validators;
 
 
@@ -35,6 +36,9 @@ builder.Services.AddControllers(options =>
 
 
 builder.Services.AddEndpointsApiExplorer();
+
+builder.Services.AddScoped<ObjectMapperService>();
+
 
 
 var app = builder.Build();
