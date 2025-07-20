@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "inmind_session5_DDD.Domain/1.0.0": {
+        "runtime": {
+          "inmind_session5_DDD.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "inmind_session5_DDD.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

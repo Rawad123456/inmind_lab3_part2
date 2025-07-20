@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\inmind_session5_DDD.API.props" />
+</Project>

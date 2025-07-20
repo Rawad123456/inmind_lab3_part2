@@ -1,0 +1,11 @@
+C:\Users\User\RiderProjects\inmind_session5_DDD\inmind_session5_DDD.Domain\bin\Debug\net9.0\inmind_session5_DDD.Domain.deps.json
+C:\Users\User\RiderProjects\inmind_session5_DDD\inmind_session5_DDD.Domain\bin\Debug\net9.0\inmind_session5_DDD.Domain.dll
+C:\Users\User\RiderProjects\inmind_session5_DDD\inmind_session5_DDD.Domain\bin\Debug\net9.0\inmind_session5_DDD.Domain.pdb
+C:\Users\User\RiderProjects\inmind_session5_DDD\inmind_session5_DDD.Domain\obj\Debug\net9.0\inmind_session5_DDD.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\RiderProjects\inmind_session5_DDD\inmind_session5_DDD.Domain\obj\Debug\net9.0\inmind_session5_DDD.Domain.AssemblyInfoInputs.cache
+C:\Users\User\RiderProjects\inmind_session5_DDD\inmind_session5_DDD.Domain\obj\Debug\net9.0\inmind_session5_DDD.Domain.AssemblyInfo.cs
+C:\Users\User\RiderProjects\inmind_session5_DDD\inmind_session5_DDD.Domain\obj\Debug\net9.0\inmind_session5_DDD.Domain.csproj.CoreCompileInputs.cache
+C:\Users\User\RiderProjects\inmind_session5_DDD\inmind_session5_DDD.Domain\obj\Debug\net9.0\inmind_session5_DDD.Domain.dll
+C:\Users\User\RiderProjects\inmind_session5_DDD\inmind_session5_DDD.Domain\obj\Debug\net9.0\refint\inmind_session5_DDD.Domain.dll
+C:\Users\User\RiderProjects\inmind_session5_DDD\inmind_session5_DDD.Domain\obj\Debug\net9.0\inmind_session5_DDD.Domain.pdb
+C:\Users\User\RiderProjects\inmind_session5_DDD\inmind_session5_DDD.Domain\obj\Debug\net9.0\ref\inmind_session5_DDD.Domain.dll
