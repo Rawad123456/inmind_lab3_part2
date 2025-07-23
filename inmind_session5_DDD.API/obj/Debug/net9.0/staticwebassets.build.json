@@ -1,12 +1,125 @@
 {
   "Version": 1,
-  "Hash": "LMfkf7Hd08smjMyZegnz/qcvGiMYoL0BysJhmWWuuMQ=",
+  "Hash": "ZRzzkXlld9GSJR2KN0h2hPYD5itrIDmfIcigzxuZh48=",
   "Source": "inmind_session5_DDD.API",
   "BasePath": "_content/inmind_session5_DDD.API",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": [],
-  "Endpoints": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "inmind_session5_DDD.API\\wwwroot",
+      "Source": "inmind_session5_DDD.API",
+      "ContentRoot": "C:\\Users\\User\\RiderProjects\\inmind_session5_DDD\\inmind_session5_DDD.API\\wwwroot\\",
+      "BasePath": "_content/inmind_session5_DDD.API",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\User\\RiderProjects\\inmind_session5_DDD\\inmind_session5_DDD.API\\wwwroot\\assets\\deadpool2.jpg",
+      "SourceId": "inmind_session5_DDD.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\RiderProjects\\inmind_session5_DDD\\inmind_session5_DDD.API\\wwwroot\\",
+      "BasePath": "_content/inmind_session5_DDD.API",
+      "RelativePath": "assets/deadpool2#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "jypdw2ql6b",
+      "Integrity": "VfN31LS+Y8r4r3mAvsKwmDLtyItEnCabqpVCQLlieYw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\deadpool2.jpg"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "assets/deadpool2.jpg",
+      "AssetFile": "C:\\Users\\User\\RiderProjects\\inmind_session5_DDD\\inmind_session5_DDD.API\\wwwroot\\assets\\deadpool2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "52945"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VfN31LS+Y8r4r3mAvsKwmDLtyItEnCabqpVCQLlieYw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 23 Jul 2025 13:26:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-VfN31LS+Y8r4r3mAvsKwmDLtyItEnCabqpVCQLlieYw="
+        }
+      ]
+    },
+    {
+      "Route": "assets/deadpool2.jypdw2ql6b.jpg",
+      "AssetFile": "C:\\Users\\User\\RiderProjects\\inmind_session5_DDD\\inmind_session5_DDD.API\\wwwroot\\assets\\deadpool2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "52945"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VfN31LS+Y8r4r3mAvsKwmDLtyItEnCabqpVCQLlieYw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 23 Jul 2025 13:26:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "jypdw2ql6b"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/deadpool2.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-VfN31LS+Y8r4r3mAvsKwmDLtyItEnCabqpVCQLlieYw="
+        }
+      ]
+    }
+  ]
 }

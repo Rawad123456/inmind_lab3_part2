@@ -1,0 +1,29 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\User\\RiderProjects\\inmind_session5_DDD\\inmind_session5_DDD.API\\wwwroot\\assets\\deadpool2.jpg",
+      "PackagePath": "staticwebassets\\assets\\deadpool2.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.build.inmind_session5_DDD.API.props",
+      "PackagePath": "build\\inmind_session5_DDD.API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildMultiTargeting.inmind_session5_DDD.API.props",
+      "PackagePath": "buildMultiTargeting\\inmind_session5_DDD.API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildTransitive.inmind_session5_DDD.API.props",
+      "PackagePath": "buildTransitive\\inmind_session5_DDD.API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.inmind_session5_DDD.API.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.inmind_session5_DDD.API.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

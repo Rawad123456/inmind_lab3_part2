@@ -17,3 +17,4 @@ C:\Users\User\RiderProjects\inmind_session5_DDD\inmind_session5_DDD.Application\
 C:\Users\User\RiderProjects\inmind_session5_DDD\inmind_session5_DDD.Application\obj\Debug\net9.0\refint\inmind_session5_DDD.Application.dll
 C:\Users\User\RiderProjects\inmind_session5_DDD\inmind_session5_DDD.Application\obj\Debug\net9.0\inmind_session5_DDD.Application.pdb
 C:\Users\User\RiderProjects\inmind_session5_DDD\inmind_session5_DDD.Application\obj\Debug\net9.0\ref\inmind_session5_DDD.Application.dll
+C:\Users\User\RiderProjects\inmind_session5_DDD\inmind_session5_DDD.Application\obj\Debug\net9.0\inmind_session5_DDD.Application.sourcelink.json

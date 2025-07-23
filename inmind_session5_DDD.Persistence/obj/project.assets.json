@@ -920,7 +920,10 @@
         },
         "runtime": {
           "bin/placeholder/inmind_session5_DDD.Common.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       },
       "inmind_session5_DDD.Domain/1.0.0": {
         "type": "project",

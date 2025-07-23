@@ -1,16 +1,22 @@
 using Application.Enrollments.Commands;
 using FluentValidation;
 using FluentValidation.AspNetCore;
+using HealthChecks.UI.Client;
 using inmind_session5_DDD.API.Filters;
+using inmind_session5_DDD.API.Logging;
 using inmind_session5_DDD.API.Services;
 using inmind_session5_DDD.Application.Students.Commands;
 using inmind_session5_DDD.Application.Students.Queries;
 using inmind_session5_DDD.Application.Validators;
 using inmind_session5_DDD.Infrastructure;
-using inmind_session5_DDD.Infrastructure.Students.Handlers;
+//using inmind_session5_DDD.Infrastructure.Students.Handlers;
 using MediatR;
+using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 
 var builder = WebApplication.CreateBuilder(args);
+
+LoggingConfiguration.ConfigureSerilog(builder);
+
 
 
 builder.Services.AddMediatR(config =>
@@ -55,6 +61,24 @@ builder.Services.AddInfrastructure(builder.Configuration);
 
 builder.Services.AddOpenApi();
 
+builder.Services.AddHostedService<StudentCountLoggerService>();
+
+
+builder.Services.AddMemoryCache();
+
+
+
+builder.Services.AddHealthChecks()
+    .AddNpgSql(
+        builder.Configuration.GetConnectionString("DefaultConnection")!,
+        name: "PostgreSQL",
+        timeout: TimeSpan.FromSeconds(5),
+        tags: new[] { "db", "sql", "postgres" });
+
+
+
+
+
 var app = builder.Build();
 
 
@@ -67,5 +91,12 @@ app.UseMiddleware<inmind_session5_DDD.API.Middleware.RequestLoggingMiddleware>()
 
 app.UseHttpsRedirection();
 app.MapControllers();
+
+app.MapHealthChecks("/health", new HealthCheckOptions
+{
+    ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse
+});
+
+app.UseStaticFiles();
 
 app.Run();

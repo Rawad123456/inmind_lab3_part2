@@ -7,21 +7,43 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <!-- FluentValidation -->
+        <PackageReference Include="AspNetCore.HealthChecks.NpgSql" Version="9.0.0" />
+        <PackageReference Include="AspNetCore.HealthChecks.UI.Client" Version="9.0.0" />
         <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.1" />
+
+        <!-- ASP.NET Core JSON + OpenAPI -->
         <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="9.0.7" />
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.0"/>
+
+        <!-- EF Core -->
         <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.7">
-          <PrivateAssets>all</PrivateAssets>
-          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
+
+        <!-- MediatR (13.0.0 to match dependency in Application project) -->
+        <PackageReference Include="MediatR" Version="13.0.0" />
+        <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.1.0" />
+
+        <!-- Serilog + Seq Logging -->
+        <PackageReference Include="Serilog.AspNetCore" Version="7.0.0" />
+        <PackageReference Include="Serilog.Settings.Configuration" Version="7.0.0" />
+        <PackageReference Include="Serilog.Sinks.Seq" Version="5.2.1" />
+        <PackageReference Include="Serilog.Sinks.Console" Version="4.1.0" />
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\inmind_session5_DDD.Application\inmind_session5_DDD.Application.csproj" />
-      <ProjectReference Include="..\inmind_session5_DDD.Common\inmind_session5_DDD.Common.csproj" />
-      <ProjectReference Include="..\inmind_session5_DDD.Domain\inmind_session5_DDD.Domain.csproj" />
-      <ProjectReference Include="..\inmind_session5_DDD.Infrastructure\inmind_session5_DDD.Infrastructure.csproj" />
-      <ProjectReference Include="..\inmind_session5_DDD.Persistence\inmind_session5_DDD.Persistence.csproj" />
+        <!-- Project References -->
+        <ProjectReference Include="..\inmind_session5_DDD.Application\inmind_session5_DDD.Application.csproj" />
+        <ProjectReference Include="..\inmind_session5_DDD.Common\inmind_session5_DDD.Common.csproj" />
+        <ProjectReference Include="..\inmind_session5_DDD.Domain\inmind_session5_DDD.Domain.csproj" />
+        <ProjectReference Include="..\inmind_session5_DDD.Infrastructure\inmind_session5_DDD.Infrastructure.csproj" />
+        <ProjectReference Include="..\inmind_session5_DDD.Persistence\inmind_session5_DDD.Persistence.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Folder Include="Logging\" />
     </ItemGroup>
 
 </Project>

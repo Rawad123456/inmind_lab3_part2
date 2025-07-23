@@ -17,3 +17,4 @@ C:\Users\User\RiderProjects\inmind_session5_DDD\inmind_session5_DDD.Persistence\
 C:\Users\User\RiderProjects\inmind_session5_DDD\inmind_session5_DDD.Persistence\obj\Debug\net9.0\inmind_session5_DDD.Persistence.pdb
 C:\Users\User\RiderProjects\inmind_session5_DDD\inmind_session5_DDD.Persistence\obj\Debug\net9.0\inmind_session5_DDD.Persistence.genruntimeconfig.cache
 C:\Users\User\RiderProjects\inmind_session5_DDD\inmind_session5_DDD.Persistence\obj\Debug\net9.0\ref\inmind_session5_DDD.Persistence.dll
+C:\Users\User\RiderProjects\inmind_session5_DDD\inmind_session5_DDD.Persistence\obj\Debug\net9.0\inmind_session5_DDD.Persistence.sourcelink.json

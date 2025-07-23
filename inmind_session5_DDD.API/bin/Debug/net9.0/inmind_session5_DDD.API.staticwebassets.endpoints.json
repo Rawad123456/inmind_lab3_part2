@@ -1,5 +1,88 @@
 {
   "Version": 1,
   "ManifestType": "Build",
-  "Endpoints": []
+  "Endpoints": [
+    {
+      "Route": "assets/deadpool2.jpg",
+      "AssetFile": "assets/deadpool2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "52945"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VfN31LS+Y8r4r3mAvsKwmDLtyItEnCabqpVCQLlieYw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 23 Jul 2025 13:26:21 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-VfN31LS+Y8r4r3mAvsKwmDLtyItEnCabqpVCQLlieYw="
+        }
+      ]
+    },
+    {
+      "Route": "assets/deadpool2.jypdw2ql6b.jpg",
+      "AssetFile": "assets/deadpool2.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "52945"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VfN31LS+Y8r4r3mAvsKwmDLtyItEnCabqpVCQLlieYw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 23 Jul 2025 13:26:21 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "jypdw2ql6b"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-VfN31LS+Y8r4r3mAvsKwmDLtyItEnCabqpVCQLlieYw="
+        },
+        {
+          "Name": "label",
+          "Value": "assets/deadpool2.jpg"
+        }
+      ]
+    }
+  ]
 }
