@@ -12,6 +12,7 @@ using inmind_session5_DDD.Infrastructure;
 //using inmind_session5_DDD.Infrastructure.Students.Handlers;
 using MediatR;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
+using Microsoft.Extensions.FileProviders;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -98,5 +99,13 @@ app.MapHealthChecks("/health", new HealthCheckOptions
 });
 
 app.UseStaticFiles();
+
+app.UseDirectoryBrowser(new DirectoryBrowserOptions
+{
+    FileProvider = new PhysicalFileProvider(
+        Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "assets")),
+    RequestPath = "/assets"
+});
+
 
 app.Run();

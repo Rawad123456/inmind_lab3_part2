@@ -15,6 +15,7 @@
         <!-- ASP.NET Core JSON + OpenAPI -->
         <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="9.0.7" />
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.0"/>
+        <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="2.3.0" />
 
         <!-- EF Core -->
         <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.7">
