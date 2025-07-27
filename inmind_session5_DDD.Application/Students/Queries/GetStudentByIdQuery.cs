@@ -40,7 +40,8 @@ namespace inmind_session5_DDD.Application.Students.Queries
             {
                 Id = student.Id,
                 FullName = student.FullName,
-                Email = student.Email
+                Email = student.Email,
+                ProfileImageUrl = student.ProfileImageUrl
             };
         }
     }

@@ -2,11 +2,13 @@ using Application.Courses.Commands;
 using Application.Courses.Queries;
 using inmind_session5_DDD.Application.DTOs;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Presentation.API.Controllers;
 
 [ApiController]
+[Authorize(Roles = "Teacher")]
 [Route("api/[controller]")]
 public class CoursesController : ControllerBase
 {

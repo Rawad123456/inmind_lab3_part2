@@ -40,7 +40,8 @@ public class GetAllStudentsQueryHandler : IRequestHandler<GetAllStudentsQuery, L
         {
             Id = s.Id,
             FullName = s.FullName,
-            Email = s.Email
+            Email = s.Email,
+            ProfileImageUrl = s.ProfileImageUrl
         }).ToList();
 
        

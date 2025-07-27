@@ -81,6 +81,9 @@ namespace inmind_session5_DDD.Persistence.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
+                    b.Property<string>("ProfileImageUrl")
+                        .HasColumnType("text");
+
                     b.HasKey("Id");
 
                     b.ToTable("Students");

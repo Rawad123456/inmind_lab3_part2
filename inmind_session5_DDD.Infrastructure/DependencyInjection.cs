@@ -1,3 +1,4 @@
+
 using inmind_session5_DDD.Persistence;
 using Microsoft.Extensions.Configuration;
 
@@ -15,6 +16,11 @@ public static class DependencyInjection
     {
         services.AddDbContext<ApplicationDbContext>(options =>
             options.UseNpgsql(config.GetConnectionString("DefaultConnection")));
+        services.AddSingleton<BlobStorageService>();
+        
+      
+
+
 
         return services;
     }

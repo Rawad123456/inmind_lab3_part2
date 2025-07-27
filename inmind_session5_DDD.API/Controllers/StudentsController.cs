@@ -1,5 +1,6 @@
 using inmind_session5_DDD.Application.Students.Commands;
 using inmind_session5_DDD.Application.Students.Queries;
+using Microsoft.AspNetCore.Authorization;
 
 namespace inmind_session5_DDD.API.Controllers;
 
@@ -9,6 +10,7 @@ using Microsoft.AspNetCore.Mvc;
 
 
 [ApiController]
+[Authorize]
 [Route("api/[controller]")]
 public class StudentsController : ControllerBase
 {
@@ -40,6 +42,30 @@ public class StudentsController : ControllerBase
         var student = await _mediator.Send(query);
         return Ok(student);
     }
+    
+    [HttpPost("{id}/upload-image")]
+    public async Task<IActionResult> UploadImage(Guid id, IFormFile file)
+    {
+        var command = new UploadStudentImageCommand
+        {
+            StudentId = id,
+            ImageFile = file
+        };
+
+        var result = await _mediator.Send(command);
+        return Ok(new { imageUrl = result });
+    }
+
+    
+    [HttpGet("{id}/download-image")]
+    public async Task<IActionResult> DownloadImage(Guid id)
+    {
+        var query = new DownloadStudentImageQuery(id);
+        var result = await _mediator.Send(query);
+        return result;
+    }
+
+
 
 
     

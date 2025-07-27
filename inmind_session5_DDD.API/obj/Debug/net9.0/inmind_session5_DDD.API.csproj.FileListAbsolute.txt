@@ -169,3 +169,16 @@ C:\Users\User\RiderProjects\inmind_session5_DDD\inmind_session5_DDD.API\bin\Debu
 C:\Users\User\RiderProjects\inmind_session5_DDD\inmind_session5_DDD.API\bin\Debug\net9.0\HealthChecks.UI.Client.dll
 C:\Users\User\RiderProjects\inmind_session5_DDD\inmind_session5_DDD.API\bin\Debug\net9.0\HealthChecks.UI.Core.dll
 C:\Users\User\RiderProjects\inmind_session5_DDD\inmind_session5_DDD.API\bin\Debug\net9.0\inmind_session5_DDD.API.staticwebassets.runtime.json
+C:\Users\User\RiderProjects\inmind_session5_DDD\inmind_session5_DDD.API\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\User\RiderProjects\inmind_session5_DDD\inmind_session5_DDD.API\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\User\RiderProjects\inmind_session5_DDD\inmind_session5_DDD.API\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\User\RiderProjects\inmind_session5_DDD\inmind_session5_DDD.API\bin\Debug\net9.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\User\RiderProjects\inmind_session5_DDD\inmind_session5_DDD.API\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\User\RiderProjects\inmind_session5_DDD\inmind_session5_DDD.API\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\User\RiderProjects\inmind_session5_DDD\inmind_session5_DDD.API\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\User\RiderProjects\inmind_session5_DDD\inmind_session5_DDD.API\bin\Debug\net9.0\Azure.Core.dll
+C:\Users\User\RiderProjects\inmind_session5_DDD\inmind_session5_DDD.API\bin\Debug\net9.0\Azure.Storage.Blobs.dll
+C:\Users\User\RiderProjects\inmind_session5_DDD\inmind_session5_DDD.API\bin\Debug\net9.0\Azure.Storage.Common.dll
+C:\Users\User\RiderProjects\inmind_session5_DDD\inmind_session5_DDD.API\bin\Debug\net9.0\System.ClientModel.dll
+C:\Users\User\RiderProjects\inmind_session5_DDD\inmind_session5_DDD.API\bin\Debug\net9.0\System.IO.Hashing.dll
+C:\Users\User\RiderProjects\inmind_session5_DDD\inmind_session5_DDD.API\bin\Debug\net9.0\System.Memory.Data.dll

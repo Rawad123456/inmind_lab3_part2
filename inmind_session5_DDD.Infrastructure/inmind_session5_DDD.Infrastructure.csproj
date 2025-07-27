@@ -15,12 +15,18 @@
 
 
     <ItemGroup>
+      <PackageReference Include="Azure.Storage.Blobs" Version="12.26.0-beta.1" />
       <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.7" />
       <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.7">
         <PrivateAssets>all</PrivateAssets>
         <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       </PackageReference>
       <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.4" />
+    </ItemGroup>
+
+
+    <ItemGroup>
+      <Folder Include="Storage\" />
     </ItemGroup>
 
 </Project>

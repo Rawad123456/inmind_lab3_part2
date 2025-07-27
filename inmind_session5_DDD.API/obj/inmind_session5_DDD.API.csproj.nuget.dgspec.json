@@ -82,6 +82,10 @@
               "target": "Package",
               "version": "[11.1.0, )"
             },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[9.0.7, )"
+            },
             "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
               "target": "Package",
               "version": "[9.0.7, )"
@@ -115,6 +119,10 @@
             "Serilog.Sinks.Seq": {
               "target": "Package",
               "version": "[5.2.1, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[9.0.3, )"
             }
           },
           "imports": [
@@ -270,6 +278,12 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+          "dependencies": {
+            "Azure.Storage.Blobs": {
+              "target": "Package",
+              "version": "[12.26.0-beta.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -409,6 +423,10 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "Azure.Storage.Blobs": {
+              "target": "Package",
+              "version": "[12.26.0-beta.1, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[9.0.7, )"
