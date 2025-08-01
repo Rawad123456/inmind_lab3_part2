@@ -13,6 +13,7 @@ using inmind_session5_DDD.API.Services;
 using inmind_session5_DDD.Application.Students.Commands;
 using inmind_session5_DDD.Application.Students.Queries;
 using inmind_session5_DDD.Application.Validators;
+using inmind_session5_DDD.Common.Tenant;
 using inmind_session5_DDD.Infrastructure;
 using MediatR;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -65,6 +66,12 @@ builder.Services.AddInfrastructure(builder.Configuration);
 
 
 builder.Services.AddHostedService<StudentCountLoggerService>();
+
+builder.Services.AddHttpContextAccessor();
+
+builder.Services.AddScoped<ITenantProvider, TenantProvider>();
+
+
 
 
 builder.Services.AddMemoryCache();
@@ -163,6 +170,8 @@ builder.Services.AddSwaggerGen(options =>
 var app = builder.Build();
 
 
+app.UseMiddleware<TenantMiddleware>();
+
 if (app.Environment.IsDevelopment())
 {
     app.UseDeveloperExceptionPage();
@@ -176,11 +185,15 @@ if (app.Environment.IsDevelopment())
 
 
 app.UseMiddleware<RequestLoggingMiddleware>();
+app.UseMiddleware<TenantMiddleware>();
 
 app.UseHttpsRedirection();
 
+app.UseRouting();
 app.UseAuthentication();
 app.UseAuthorization();
+
+
 
 
 app.MapControllers();

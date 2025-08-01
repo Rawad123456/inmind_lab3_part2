@@ -10,6 +10,7 @@
       <ProjectReference Include="..\inmind_session5_DDD.Common\inmind_session5_DDD.Common.csproj" />
       <ProjectReference Include="..\inmind_session5_DDD.Domain\inmind_session5_DDD.Domain.csproj" />
       <ProjectReference Include="..\inmind_session5_DDD.Persistence\inmind_session5_DDD.Persistence.csproj" />
+ 
     </ItemGroup>
 
     <ItemGroup>

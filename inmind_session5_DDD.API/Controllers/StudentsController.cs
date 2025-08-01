@@ -10,7 +10,7 @@ using Microsoft.AspNetCore.Mvc;
 
 
 [ApiController]
-[Authorize]
+//[Authorize]
 [Route("api/[controller]")]
 public class StudentsController : ControllerBase
 {

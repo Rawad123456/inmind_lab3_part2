@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace Presentation.API.Controllers;
 
 [ApiController]
-[Authorize(Roles = "Teacher")]
+//[Authorize(Roles = "Teacher")]
 [Route("api/[controller]")]
 public class CoursesController : ControllerBase
 {

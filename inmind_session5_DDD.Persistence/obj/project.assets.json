@@ -739,6 +739,23 @@
           }
         }
       },
+      "RabbitMQ.Client/6.7.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.5",
+          "System.Threading.Channels": "7.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/RabbitMQ.Client.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/RabbitMQ.Client.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.ClientModel/1.4.2": {
         "type": "package",
         "dependencies": {
@@ -930,6 +947,15 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
+      "System.Memory/4.5.5": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.1/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/_._": {}
+        }
+      },
       "System.Memory.Data/6.0.1": {
         "type": "package",
         "compile": {
@@ -1000,7 +1026,7 @@
       "System.Threading.Channels/7.0.0": {
         "type": "package",
         "compile": {
-          "lib/net7.0/_._": {
+          "lib/net7.0/System.Threading.Channels.dll": {
             "related": ".xml"
           }
         },
@@ -1017,7 +1043,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
-          "Azure.Storage.Blobs": "12.26.0-beta.1"
+          "Azure.Storage.Blobs": "12.26.0-beta.1",
+          "RabbitMQ.Client": "6.7.0"
         },
         "compile": {
           "bin/placeholder/inmind_session5_DDD.Common.dll": {}
@@ -2576,6 +2603,23 @@
         "postgresql.png"
       ]
     },
+    "RabbitMQ.Client/6.7.0": {
+      "sha512": "b8Jn6dCWZjBmge1KX3hbXNtopBPYjFfFAFRQ7BMlgxWonGBAR19JpLr4V5OiEf8TRx7bWhi/SvLsPQVpL+lxng==",
+      "type": "package",
+      "path": "rabbitmq.client/6.7.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "icon.png",
+        "lib/net462/RabbitMQ.Client.dll",
+        "lib/net462/RabbitMQ.Client.xml",
+        "lib/netstandard2.0/RabbitMQ.Client.dll",
+        "lib/netstandard2.0/RabbitMQ.Client.xml",
+        "rabbitmq.client.6.7.0.nupkg.sha512",
+        "rabbitmq.client.nuspec"
+      ]
+    },
     "System.ClientModel/1.4.2": {
       "sha512": "goGitN7trB9hoQ01dIpxaSYcruI+lGt/xq471AUv8irFvsIX+4HCqk1pDT/4ZPTLmU6ZUuNzhCb4MJAIwG7+Uw==",
       "type": "package",
@@ -2860,6 +2904,29 @@
         "system.io.pipelines.7.0.0.nupkg.sha512",
         "system.io.pipelines.nuspec",
         "useSharedDesignerContext.txt"
+      ]
+    },
+    "System.Memory/4.5.5": {
+      "sha512": "XIWiDvKPXaTveaB7HVganDlOCRoj03l+jrwNvcge/t8vhGYKvqV+dMv6G4SAX2NoNmN0wZfVPTAlFwZcZvVOUw==",
+      "type": "package",
+      "path": "system.memory/4.5.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Memory.dll",
+        "lib/net461/System.Memory.xml",
+        "lib/netcoreapp2.1/_._",
+        "lib/netstandard1.1/System.Memory.dll",
+        "lib/netstandard1.1/System.Memory.xml",
+        "lib/netstandard2.0/System.Memory.dll",
+        "lib/netstandard2.0/System.Memory.xml",
+        "ref/netcoreapp2.1/_._",
+        "system.memory.4.5.5.nupkg.sha512",
+        "system.memory.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
       ]
     },
     "System.Memory.Data/6.0.1": {

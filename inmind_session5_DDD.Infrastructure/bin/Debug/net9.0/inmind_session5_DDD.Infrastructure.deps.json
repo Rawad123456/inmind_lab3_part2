@@ -672,6 +672,18 @@
           }
         }
       },
+      "RabbitMQ.Client/6.7.0": {
+        "dependencies": {
+          "System.Memory": "4.5.5",
+          "System.Threading.Channels": "7.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/RabbitMQ.Client.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.7.0.0"
+          }
+        }
+      },
       "System.ClientModel/1.4.2": {
         "dependencies": {
           "Microsoft.Extensions.Logging.Abstractions": "9.0.7",
@@ -762,6 +774,7 @@
         }
       },
       "System.IO.Pipelines/7.0.0": {},
+      "System.Memory/4.5.5": {},
       "System.Memory.Data/6.0.1": {
         "runtime": {
           "lib/net6.0/System.Memory.Data.dll": {
@@ -804,7 +817,8 @@
       },
       "inmind_session5_DDD.Common/1.0.0": {
         "dependencies": {
-          "Azure.Storage.Blobs": "12.26.0-beta.1"
+          "Azure.Storage.Blobs": "12.26.0-beta.1",
+          "RabbitMQ.Client": "6.7.0"
         },
         "runtime": {
           "inmind_session5_DDD.Common.dll": {
@@ -1130,6 +1144,13 @@
       "path": "npgsql.entityframeworkcore.postgresql/9.0.4",
       "hashPath": "npgsql.entityframeworkcore.postgresql.9.0.4.nupkg.sha512"
     },
+    "RabbitMQ.Client/6.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-b8Jn6dCWZjBmge1KX3hbXNtopBPYjFfFAFRQ7BMlgxWonGBAR19JpLr4V5OiEf8TRx7bWhi/SvLsPQVpL+lxng==",
+      "path": "rabbitmq.client/6.7.0",
+      "hashPath": "rabbitmq.client.6.7.0.nupkg.sha512"
+    },
     "System.ClientModel/1.4.2": {
       "type": "package",
       "serviceable": true,
@@ -1206,6 +1227,13 @@
       "sha512": "sha512-jRn6JYnNPW6xgQazROBLSfpdoczRw694vO5kKvMcNnpXuolEixUyw6IBuBs2Y2mlSX/LdLvyyWmfXhaI3ND1Yg==",
       "path": "system.io.pipelines/7.0.0",
       "hashPath": "system.io.pipelines.7.0.0.nupkg.sha512"
+    },
+    "System.Memory/4.5.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-XIWiDvKPXaTveaB7HVganDlOCRoj03l+jrwNvcge/t8vhGYKvqV+dMv6G4SAX2NoNmN0wZfVPTAlFwZcZvVOUw==",
+      "path": "system.memory/4.5.5",
+      "hashPath": "system.memory.4.5.5.nupkg.sha512"
     },
     "System.Memory.Data/6.0.1": {
       "type": "package",

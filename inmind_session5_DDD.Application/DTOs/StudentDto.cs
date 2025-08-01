@@ -8,6 +8,7 @@ public class StudentDto
     public string FullName { get; set; } = default!;
     public string Email { get; set; } = default!;
     
+    public string TenantId { get; set; }
     public string? ProfileImageUrl { get; set; }
 
 }

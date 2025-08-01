@@ -1372,6 +1372,23 @@
           }
         }
       },
+      "RabbitMQ.Client/6.7.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.5",
+          "System.Threading.Channels": "7.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/RabbitMQ.Client.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/RabbitMQ.Client.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Serilog/2.12.0": {
         "type": "package",
         "compile": {
@@ -1849,6 +1866,15 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
+      "System.Memory/4.5.5": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.1/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/_._": {}
+        }
+      },
       "System.Memory.Data/6.0.1": {
         "type": "package",
         "compile": {
@@ -1941,7 +1967,7 @@
       "System.Threading.Channels/7.0.0": {
         "type": "package",
         "compile": {
-          "lib/net7.0/_._": {
+          "lib/net7.0/System.Threading.Channels.dll": {
             "related": ".xml"
           }
         },
@@ -1977,7 +2003,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
-          "Azure.Storage.Blobs": "12.26.0-beta.1"
+          "Azure.Storage.Blobs": "12.26.0-beta.1",
+          "RabbitMQ.Client": "6.7.0"
         },
         "compile": {
           "bin/placeholder/inmind_session5_DDD.Common.dll": {}
@@ -4575,6 +4602,23 @@
         "postgresql.png"
       ]
     },
+    "RabbitMQ.Client/6.7.0": {
+      "sha512": "b8Jn6dCWZjBmge1KX3hbXNtopBPYjFfFAFRQ7BMlgxWonGBAR19JpLr4V5OiEf8TRx7bWhi/SvLsPQVpL+lxng==",
+      "type": "package",
+      "path": "rabbitmq.client/6.7.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "icon.png",
+        "lib/net462/RabbitMQ.Client.dll",
+        "lib/net462/RabbitMQ.Client.xml",
+        "lib/netstandard2.0/RabbitMQ.Client.dll",
+        "lib/netstandard2.0/RabbitMQ.Client.xml",
+        "rabbitmq.client.6.7.0.nupkg.sha512",
+        "rabbitmq.client.nuspec"
+      ]
+    },
     "Serilog/2.12.0": {
       "sha512": "xaiJLIdu6rYMKfQMYUZgTy8YK7SMZjB4Yk50C/u//Z4OsvxkUfSPJy4nknfvwAC34yr13q7kcyh4grbwhSxyZg==",
       "type": "package",
@@ -5221,6 +5265,29 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "System.Memory/4.5.5": {
+      "sha512": "XIWiDvKPXaTveaB7HVganDlOCRoj03l+jrwNvcge/t8vhGYKvqV+dMv6G4SAX2NoNmN0wZfVPTAlFwZcZvVOUw==",
+      "type": "package",
+      "path": "system.memory/4.5.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Memory.dll",
+        "lib/net461/System.Memory.xml",
+        "lib/netcoreapp2.1/_._",
+        "lib/netstandard1.1/System.Memory.dll",
+        "lib/netstandard1.1/System.Memory.xml",
+        "lib/netstandard2.0/System.Memory.dll",
+        "lib/netstandard2.0/System.Memory.xml",
+        "ref/netcoreapp2.1/_._",
+        "system.memory.4.5.5.nupkg.sha512",
+        "system.memory.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
     "System.Memory.Data/6.0.1": {
       "sha512": "yliDgLh9S9Mcy5hBIdZmX6yphYIW3NH+3HN1kV1m7V1e0s7LNTw/tHNjJP4U9nSMEgl3w1TzYv/KA1Tg9NYy6w==",
       "type": "package",
@@ -5470,6 +5537,7 @@
       "Microsoft.AspNetCore.OpenApi >= 9.0.0",
       "Microsoft.AspNetCore.StaticFiles >= 2.3.0",
       "Microsoft.EntityFrameworkCore.Design >= 9.0.7",
+      "RabbitMQ.Client >= 6.7.0",
       "Serilog.AspNetCore >= 7.0.0",
       "Serilog.Settings.Configuration >= 7.0.0",
       "Serilog.Sinks.Console >= 4.1.0",
@@ -5584,6 +5652,10 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[9.0.7, )"
+          },
+          "RabbitMQ.Client": {
+            "target": "Package",
+            "version": "[6.7.0, )"
           },
           "Serilog.AspNetCore": {
             "target": "Package",

@@ -22,7 +22,8 @@ public class GetAllEnrollmentsQueryHandler : IRequestHandler<GetAllEnrollmentsQu
             {
                 Id = e.Id,
                 StudentId = e.StudentId,
-                CourseId = e.CourseId
+                CourseId = e.CourseId,
+                TenantId = e.TenantId
             })
             .ToListAsync(cancellationToken);
     }

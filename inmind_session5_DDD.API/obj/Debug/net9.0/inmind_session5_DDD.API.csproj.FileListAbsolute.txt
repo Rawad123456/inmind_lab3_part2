@@ -182,3 +182,4 @@ C:\Users\User\RiderProjects\inmind_session5_DDD\inmind_session5_DDD.API\bin\Debu
 C:\Users\User\RiderProjects\inmind_session5_DDD\inmind_session5_DDD.API\bin\Debug\net9.0\System.ClientModel.dll
 C:\Users\User\RiderProjects\inmind_session5_DDD\inmind_session5_DDD.API\bin\Debug\net9.0\System.IO.Hashing.dll
 C:\Users\User\RiderProjects\inmind_session5_DDD\inmind_session5_DDD.API\bin\Debug\net9.0\System.Memory.Data.dll
+C:\Users\User\RiderProjects\inmind_session5_DDD\inmind_session5_DDD.API\bin\Debug\net9.0\RabbitMQ.Client.dll

@@ -33,6 +33,10 @@ namespace inmind_session5_DDD.Persistence.Migrations
                     b.Property<int>("TeacherId")
                         .HasColumnType("integer");
 
+                    b.Property<string>("TenantId")
+                        .IsRequired()
+                        .HasColumnType("text");
+
                     b.Property<string>("Title")
                         .IsRequired()
                         .HasColumnType("text");
@@ -57,6 +61,10 @@ namespace inmind_session5_DDD.Persistence.Migrations
 
                     b.Property<Guid>("StudentId")
                         .HasColumnType("uuid");
+
+                    b.Property<string>("TenantId")
+                        .IsRequired()
+                        .HasColumnType("text");
 
                     b.HasKey("Id");
 
@@ -84,6 +92,10 @@ namespace inmind_session5_DDD.Persistence.Migrations
                     b.Property<string>("ProfileImageUrl")
                         .HasColumnType("text");
 
+                    b.Property<string>("TenantId")
+                        .IsRequired()
+                        .HasColumnType("text");
+
                     b.HasKey("Id");
 
                     b.ToTable("Students");
@@ -98,6 +110,10 @@ namespace inmind_session5_DDD.Persistence.Migrations
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("TenantId")
                         .IsRequired()
                         .HasColumnType("text");
 
