@@ -1,0 +1,38 @@
+﻿version: '3.9'
+
+services:
+  postgres:
+    image: postgres:latest
+    container_name: ddd-postgres-compose
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: DatabaseDemo
+    ports:
+      - "5432:5432"
+
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ddd-api-container-compose
+    ports:
+      - "3700:3700"
+    depends_on:
+      - postgres
+      - keycloak
+    environment:
+      ConnectionStrings__DefaultConnection: "Host=postgres;Port=5432;Database=DatabaseDemo;Username=postgres;Password=postgres"
+      Keycloak__Url: "http://keycloak:8080"
+
+  
+
+  keycloak:
+    image: quay.io/keycloak/keycloak:21.0.1
+    container_name: ddd-keycloak-compose
+    environment:
+      KEYCLOAK_ADMIN: admin
+      KEYCLOAK_ADMIN_PASSWORD: admin
+    command: start-dev
+    ports:
+      - "8080:8080"

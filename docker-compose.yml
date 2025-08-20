@@ -1,0 +1,28 @@
+﻿FROM mcr.microsoft.com/dotnet/aspnet:9.0 AS base
+USER $APP_UID
+WORKDIR /app
+EXPOSE 8080
+EXPOSE 8081
+
+FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
+ARG BUILD_CONFIGURATION=Release
+WORKDIR /src
+COPY ["inmind_session5_DDD.API/inmind_session5_DDD.API.csproj", "inmind_session5_DDD.API/"]
+COPY ["inmind_session5_DDD.Application/inmind_session5_DDD.Application.csproj", "inmind_session5_DDD.Application/"]
+COPY ["inmind_session5_DDD.Common/inmind_session5_DDD.Common.csproj", "inmind_session5_DDD.Common/"]
+COPY ["inmind_session5_DDD.Domain/inmind_session5_DDD.Domain.csproj", "inmind_session5_DDD.Domain/"]
+COPY ["inmind_session5_DDD.Persistence/inmind_session5_DDD.Persistence.csproj", "inmind_session5_DDD.Persistence/"]
+COPY ["inmind_session5_DDD.Infrastructure/inmind_session5_DDD.Infrastructure.csproj", "inmind_session5_DDD.Infrastructure/"]
+RUN dotnet restore "inmind_session5_DDD.API/inmind_session5_DDD.API.csproj"
+COPY . .
+WORKDIR "/src/inmind_session5_DDD.API"
+RUN dotnet build "./inmind_session5_DDD.API.csproj" -c $BUILD_CONFIGURATION -o /app/build
+
+FROM build AS publish
+ARG BUILD_CONFIGURATION=Release
+RUN dotnet publish "./inmind_session5_DDD.API.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
+
+FROM base AS final
+WORKDIR /app
+COPY --from=publish /app/publish .
+ENTRYPOINT ["dotnet", "inmind_session5_DDD.API.dll"]
